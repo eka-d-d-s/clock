@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(238, 229, 229) ;
+   overflow: auto;
+    
+}
+.container{
+   margin: 0;
+   max-width: 1280px;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.circle-contant{
+    margin-top: 50px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border:5px solid rgb(1, 93, 139) ;
+ }
+.arrow-short{
+   width: 250px;
+   height: 5px;
+   background-color:rgb(1, 93, 139);
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform-origin: 0;
+}
+
+.arrow-long{
+   width: 300px;
+   height: 5px;
+   background-color:rgb(1, 93, 139);
+    position: relative;
+   top: 50%;
+   left: 50%;
+   transform-origin: 0;
+ }
+
+  .arrow-short{
+    transform: rotate(0);
+    animation: 60s ease infinite rotate;
+    transition-timing-function:(0.0, 0.0, 1.0, 1.0);
+ }
+
+ @keyframes rotate{
+    to{
+       transform:rotate(360deg)
+    }
+
+ }
+ .arrow-long{
+    transform: rotate(0);
+    animation: 10s ease infinite rotate;
+    transition-timing-function:(0.0, 0.0, 1.0, 1.0)
+ }
+ @keyframes rotate{
+    to{
+       transform:rotate(360deg) 
+    }
+ }
+ .hello{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    
+    
+    
+ }
+ .board_1{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(179, 45, 200);
+    border:5px solid rgb(88, 4, 109) ;
+    
+    
+    
+ }
+ .board_2{
+   
+    width: 300px;
+    height: 200px;
+    background-color: rgb(179, 45, 200);
+    border:5px solid rgb(88, 4, 109);
+    
+  
+ }
+ .text{
+   font-size: 50px;
+   position: static;
+ 
+   
+   
+ }
+
+.board_1{
+   margin: 100px 0;
+   animation:3s ease infinite board_1;
+
+}
+@keyframes board_1{
+   from{
+      margin-right: 0;
+      
+   }
+     to{
+      margin-right: 200px;
+      
+   }
+}
+.board_2{
+   margin: 100px 0;
+   animation: 3s ease infinite board_2;
+}
+@keyframes board_2{
+   from{
+      margin-left: 0;
+      
+   }
+   to{
+      margin-left: 200px;
+      
+
+   }
+}
+.leaves{
+   max-height: 250px;
+   height: 100%;
+   padding: 50px 0;
+   display: flex;
+}
+
+  
+.text-leaves{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 350px;
+   height:100%;
+   background-color:wheat;
+}
+.text-leaves:hover{
+   background-color:rgb(121, 117, 117);
+   opacity:90% ;
+}
+ 
+  img{
+    width: 350px;
+   height:250px;
+   
+  }
+.leaves:hover img{
+   background-color:black;
+   opacity:70% ;
+   transform: scale(1.5);
+   animation: 1s ease;
+  }
